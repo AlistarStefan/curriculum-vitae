@@ -1,4 +1,3 @@
-import './Header.css'
 import { Button } from '@mui/material'
 
 function HeaderCard({name}: any) {

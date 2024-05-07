@@ -1,4 +1,3 @@
-import './Header.css'
 import { AppBar, Box, Toolbar, Typography } from "@mui/material"
 import HeaderCard from './HeaderCard'
 
