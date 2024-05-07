@@ -11,7 +11,6 @@ function Header() {
             <AppBar position="static">
                 <Toolbar>
                     <Typography variant='h6'
-                                color='secondary'
                                 component='a'
                                 sx={{
                                     flexGrow: 1,
@@ -21,9 +20,9 @@ function Header() {
                     </Typography>
 
                     <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "flex-end" }}>
-                        <HeaderCard name="About me" link="#about"/>
-                        <HeaderCard name="Experience and Education" link="#experience"/>
-                        <HeaderCard name="Contact" link="#contact"/>
+                        <HeaderCard name="About me"/>
+                        <HeaderCard name="Experience and Education"/>
+                        <HeaderCard name="Contact"/>
                     </Box>
                 </Toolbar>
             </AppBar>

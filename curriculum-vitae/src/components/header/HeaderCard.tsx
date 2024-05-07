@@ -1,22 +1,15 @@
-import Typography from '@mui/material/Typography'
 import './Header.css'
+import { Button } from '@mui/material'
 
-function HeaderCard({name, link}: any) {
+function HeaderCard({name}: any) {
     
     return(
         <>
-            <Typography variant="h6"
-                        component="a"
-                        href={link}
-                        sx={{ 
-                            flexGrow: 0,
-                            paddingLeft: "1.5em"
-                            }}>
+            <Button sx={{color: '#fff'}}>
                 {name}
-            </Typography>
+            </Button>
         </>
     )
-
 }
 
 export default HeaderCard
