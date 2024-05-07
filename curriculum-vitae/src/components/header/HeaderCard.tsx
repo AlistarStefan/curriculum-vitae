@@ -1,12 +1,19 @@
+import Typography from '@mui/material/Typography'
 import './Header.css'
 
-function HeaderCard({name}: any) {
+function HeaderCard({name, link}: any) {
     
     return(
         <>
-            <a>
+            <Typography variant="h6"
+                        component="a"
+                        href={link}
+                        sx={{ 
+                            flexGrow: 0,
+                            paddingLeft: "1.5em"
+                            }}>
                 {name}
-            </a>
+            </Typography>
         </>
     )
 
