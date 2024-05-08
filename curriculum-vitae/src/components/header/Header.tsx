@@ -9,12 +9,13 @@ function Header() {
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">
                 <Toolbar>
-                    <Typography variant='h6'
-                                component='a'
-                                sx={{
-                                    flexGrow: 1,
-                                    paddingLeft: '1em'
-                                }}>
+                    <Typography 
+                        variant='h6'
+                        component='a'
+                        sx={{
+                            flexGrow: 1,
+                            paddingLeft: '1em'
+                        }}>
                         Alistar Stefan
                     </Typography>
 
