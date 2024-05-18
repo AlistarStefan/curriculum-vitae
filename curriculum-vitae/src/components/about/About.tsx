@@ -23,7 +23,6 @@ function About() {
                 including versions of Lorem Ipsum.
             </Typography>
         </Box>
-        
         </>
     )
 }

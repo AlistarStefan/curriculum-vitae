@@ -3,6 +3,7 @@ import './App.css'
 import Header from './components/header/Header.tsx'
 import { appTheme } from './themes/theme.ts'
 import About from './components/about/About.tsx'
+import Experience from './components/experience/Experience.tsx'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <>
         <Header/>
         <About/>
+        <Experience/>
       </>
     </ThemeProvider>
     
