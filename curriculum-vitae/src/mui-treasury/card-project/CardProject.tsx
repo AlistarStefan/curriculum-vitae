@@ -20,6 +20,7 @@ export function CardProject({headerTitle, company, role, logo, description}: Car
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
+          marginTop: 10, 
         }}>
       <Card
         sx={{
@@ -28,7 +29,7 @@ export function CardProject({headerTitle, company, role, logo, description}: Car
           boxShadow: "0 8px 40px -12px rgba(0,0,0,0.3)",
           transition: "0.3s",
           alignItems: "center",
-          marginTop: 10, 
+          
         }}
       >
         <Box sx={{ minWidth: 256 }}>

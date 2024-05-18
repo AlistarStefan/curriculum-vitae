@@ -5,6 +5,8 @@ import { appTheme } from './themes/theme.ts'
 import About from './components/about/About.tsx'
 import Experience from './components/experience/Experience.tsx'
 import Education from './components/education/Education.tsx'
+import Contact from './components/contact/Contact.tsx'
+import Footer from './components/footer/Footer.tsx'
 
 function App() {
 
@@ -16,6 +18,8 @@ function App() {
         <About/>
         <Experience/>
         <Education/>
+        <Contact/>
+        <Footer/>
       </>
     </ThemeProvider>
     
