@@ -1,12 +1,16 @@
-import { CardContent, Typography } from "@mui/material"
 import { CardProject } from "../../mui-treasury/card-project"
+import developerLogo from "../../assets/developerLogo.png"
 
 function Experience() {
 
     return(
 
         <>
-            <CardProject/>
+            <CardProject headerTitle='Experience' 
+                        company='Codemart' 
+                        role='Full-stack Developer'
+                        logo={developerLogo}
+                        description='Ce am facut la job, despre proiecte etc.'/>
         </>
 
     )

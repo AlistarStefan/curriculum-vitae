@@ -1,5 +1,5 @@
 import { Avatar, Box, Typography } from "@mui/material"
-import profilePic from "../../assets/image.png"
+import profilePic from "../../assets/profilePic.png"
 
 function About() {
     return(

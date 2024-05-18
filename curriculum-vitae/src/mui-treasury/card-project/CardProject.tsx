@@ -1,4 +1,3 @@
-import React from "react";
 import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
@@ -7,13 +6,12 @@ import Typography from "@mui/material/Typography";
 import { Info, InfoEyebrow, InfoSubtitle, InfoTitle } from "../info-basic";
 import { getInfoN04Styles } from "../info-n04";
 
-export function CardProject() {
+export function CardProject({headerTitle, company, role, logo, description}: any) {
   return (
     <Box sx={{
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          height: '100vh',
         }}>
       <Card
         sx={{
@@ -36,6 +34,7 @@ export function CardProject() {
           >
             <Avatar
               alt={"brand logo"}
+              src={logo}
               sx={(theme) => ({
                 width: 48,
                 height: 48,
@@ -58,7 +57,7 @@ export function CardProject() {
                 letterSpacing: "1px",
               }}
             >
-              Experience
+              {headerTitle}
             </Typography>
           </Box>
           <Box
@@ -74,10 +73,10 @@ export function CardProject() {
         </Box>
         <CardContent sx={{ p: 3 }}>
           <Info useStyles={getInfoN04Styles}>
-            <InfoEyebrow>Codemart</InfoEyebrow>
-            <InfoTitle>Full-stack developer</InfoTitle>
+            <InfoEyebrow>{company}</InfoEyebrow>
+            <InfoTitle>{role}</InfoTitle>
             <InfoSubtitle>
-              Descriere despre ce am facut la job, tehnologii folosite, proiecte in mare etc.
+              {description}
             </InfoSubtitle>
           </Info>
         </CardContent>

@@ -4,6 +4,7 @@ import Header from './components/header/Header.tsx'
 import { appTheme } from './themes/theme.ts'
 import About from './components/about/About.tsx'
 import Experience from './components/experience/Experience.tsx'
+import Education from './components/education/Education.tsx'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Header/>
         <About/>
         <Experience/>
+        <Education/>
       </>
     </ThemeProvider>
     
