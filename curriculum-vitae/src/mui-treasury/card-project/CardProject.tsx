@@ -6,7 +6,15 @@ import Typography from "@mui/material/Typography";
 import { Info, InfoEyebrow, InfoSubtitle, InfoTitle } from "../info-basic";
 import { getInfoN04Styles } from "../info-n04";
 
-export function CardProject({headerTitle, company, role, logo, description}: any) {
+type CardProjectProps = {
+  headerTitle: string;
+  company: string;
+  role: string;
+  logo: string;
+  description: string;
+};
+
+export function CardProject({headerTitle, company, role, logo, description}: CardProjectProps) {
   return (
     <Box sx={{
           display: 'flex',

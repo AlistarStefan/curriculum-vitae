@@ -1,6 +1,10 @@
 import { Button } from '@mui/material'
 
-function HeaderCard({name}: any) {
+type HeaderCardProps = {
+    name: string;
+};
+
+function HeaderCard({name}: HeaderCardProps) {
     
     return(
         <>
