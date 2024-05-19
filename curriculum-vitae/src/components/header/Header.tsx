@@ -14,13 +14,12 @@ function Header() {
               variant="h6"
               component="a"
               sx={{
-                flexGrow: 1,
                 paddingLeft: "1em",
               }}
             >
               Alistar Stefan
             </Typography>
-            <Box sx={{ flexGrow: 1, display: "flex" }}>
+            <Box sx={{ alignItems: "center", display: "flex", marginLeft: 10 }}>
               <Link href="https://github.com/AlistarStefan" target="_blank">
                 <img
                   src={githubLogo}
