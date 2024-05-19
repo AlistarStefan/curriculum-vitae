@@ -56,6 +56,7 @@ function Contact() {
                     label="Email"
                     placeholder="Enter email name"
                     variant="outlined"
+                    type="email"
                     fullWidth
                     required
                   ></TextField>
