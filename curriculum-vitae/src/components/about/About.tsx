@@ -2,10 +2,10 @@ import { Avatar, Box, Typography } from "@mui/material";
 import profilePic from "../../assets/profilePic.png";
 import TechStack from "./TechStack";
 
-function About() {
+function About({refName}: any) {
   return (
     <>
-      <Box sx={{ display: "flex", flexDirection: "row", alignItems: "center", marginTop: 10 }}>
+      <Box ref={refName} sx={{ display: "flex", flexDirection: "row", alignItems: "center", marginTop: 10 }}>
         <Box
           sx={{
             alignItems: "center",

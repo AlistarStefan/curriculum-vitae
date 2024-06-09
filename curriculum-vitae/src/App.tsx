@@ -7,17 +7,23 @@ import Experience from "./components/experience/Experience.tsx";
 import Education from "./components/education/Education.tsx";
 import Contact from "./components/contact/Contact.tsx";
 import Footer from "./components/footer/Footer.tsx";
+import { useRef } from "react";
 
 function App() {
+  const aboutRef = useRef<HTMLDivElement | null>(null);
+  const experienceRef = useRef<HTMLDivElement | null>(null);
+  const contactRef = useRef<HTMLDivElement | null>(null);
+  const scrollRefList = [aboutRef, experienceRef, contactRef];
+
   return (
     <ThemeProvider theme={appTheme}>
       <CssBaseline enableColorScheme />
       <>
-        <Header />
-        <About />
-        <Experience />
+        <Header refList={scrollRefList}/>
+        <About refName={aboutRef}/>
+        <Experience refName={experienceRef}/>
         <Education />
-        <Contact />
+        <Contact refName={contactRef}/>
         <Footer />
       </>
     </ThemeProvider>

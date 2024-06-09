@@ -8,10 +8,11 @@ import {
   Typography,
 } from "@mui/material";
 
-function Contact() {
+function Contact({refName}: any) {
   return (
     <>
       <Box
+        ref={refName}
         sx={{
           display: "flex",
           justifyContent: "center",

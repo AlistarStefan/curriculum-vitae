@@ -4,7 +4,7 @@ import githubLogo from "../../assets/githubLogo.png";
 import linkedinLogo from "../../assets/linkedinLogo.png";
 import instaLogo from "../../assets/instaLogo.png";
 
-function Header() {
+function Header({refList}: any) {
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
@@ -65,9 +65,9 @@ function Header() {
             <Box
               sx={{ flexGrow: 1, display: "flex", justifyContent: "flex-end" }}
             >
-              <HeaderCard name="About me" />
-              <HeaderCard name="Experience and Education" />
-              <HeaderCard name="Contact" />
+              <HeaderCard name="About me" refName={refList[0]}/>
+              <HeaderCard name="Experience and Education" refName={refList[1]} />
+              <HeaderCard name="Contact" refName={refList[2]} />
             </Box>
           </Toolbar>
         </AppBar>
