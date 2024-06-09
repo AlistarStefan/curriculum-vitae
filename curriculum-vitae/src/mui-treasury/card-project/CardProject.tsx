@@ -24,6 +24,7 @@ export function CardProject({headerTitle, company, role, logo, description}: Car
         }}>
       <Card
         sx={{
+          width: 500,
           maxWidth: 600,
           borderRadius: "20px",
           boxShadow: "0 8px 40px -12px rgba(0,0,0,0.3)",

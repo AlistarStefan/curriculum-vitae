@@ -30,7 +30,7 @@ function TechStack() {
     gitLogo,
   ];
   const logoItems = logos.map((logo) => (
-    <Grid item xs={3} sx={{ height: 100 }}>
+    <Grid key={logo} item xs={3} sx={{ height: 100 }}>
       <img src={logo} />
     </Grid>
   ));
@@ -38,7 +38,6 @@ function TechStack() {
     <>
       <Grid container spacing={0} sx={{ paddingLeft: 10, paddingRight: 30 }}>
         {logoItems}
-        
       </Grid>
     </>
   );
