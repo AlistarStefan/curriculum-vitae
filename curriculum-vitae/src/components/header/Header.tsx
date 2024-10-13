@@ -1,4 +1,4 @@
-import { AppBar, Avatar, Box, Link, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, Link, Toolbar, Typography } from "@mui/material";
 import HeaderCard from "./HeaderCard";
 import githubLogo from "../../assets/githubLogo.png";
 import linkedinLogo from "../../assets/linkedinLogo.png";

@@ -16,6 +16,7 @@ function App() {
   const scrollRefList = [aboutRef, experienceRef, contactRef];
 
   return (
+    // TODO: refactor all sx into css files
     <ThemeProvider theme={appTheme}>
       <CssBaseline enableColorScheme />
       <>
